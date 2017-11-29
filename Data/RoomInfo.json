@@ -1,0 +1,29 @@
+[{
+    "NumberOfRoomsAvailable": "30",
+    "RoomType": "One King",
+    "RoomPrice": "179"
+}, {
+ "NumberOfRoomsAvailable": "10",
+    "RoomType": "One King Deluxe",
+    "RoomPrice": "189"
+}, 
+{
+"NumberOfRoomsAvailable": "30",
+    "RoomType": "Two Queens",
+    "RoomPrice": "189"
+},
+{
+"NumberOfRooms Available": "15",
+    "RoomType": "Two Queen Deluxe",
+    "RoomPrice": "214"
+},
+{
+"NumberOfRooms Available": "10",
+    "RoomType": "One King Suite",
+    "RoomPrice": "249"
+},
+{
+"NumberOfRooms Available": "5",
+    "RoomType": "One King Presidential Suite",
+    "RoomPrice": "289"
+}]

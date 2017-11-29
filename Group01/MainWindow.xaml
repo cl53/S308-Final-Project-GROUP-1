@@ -1,0 +1,54 @@
+﻿<Window x:Name="winMainWindow" x:Class="Group01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group01"
+        mc:Ignorable="d"
+        Title="Main Window" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/background2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="btnNavToRoomMgmt" Content="Room Management" HorizontalAlignment="Left" Margin="256,370,0,0" VerticalAlignment="Top" Width="129" Height="56" Click="btnNavToRoomMgmt_Click" FontWeight="Bold" FontSize="13.333" TabIndex="1">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnNavToNewReservation" Content="New Reservation" HorizontalAlignment="Left" Margin="93,370,0,0" VerticalAlignment="Top" Width="134" Height="56" Click="btnNavToNewReservation_Click" FontWeight="Bold" FontSize="13.333" BorderBrush="#FF595454" TabIndex="0">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnNavToRoomPreview" Content="Room Preview" HorizontalAlignment="Left" Margin="587,370,0,0" VerticalAlignment="Top" Width="129" Height="56" Click="btnNavToRoomPreview_Click" FontWeight="Bold" FontSize="13.333" TabIndex="3">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnNavToReservationReport" Content="Reservations Report" HorizontalAlignment="Left" Margin="424,370,0,0" VerticalAlignment="Top" Width="134" Height="56" Click="btnNavToReservationReport_Click" FontWeight="Bold" FontSize="13.333" TabIndex="2">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnExit" Content="Exit the System" HorizontalAlignment="Left" Margin="757,372,0,0" VerticalAlignment="Top" Width="129" Height="55" Click="btnExit_Click" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="13.333" TabIndex="4">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.777"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.618"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lblSystemTitle" Content="Enterprise Hotel Reservation System" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="432" FontSize="21.333" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="280,0">
+            <Label.Background>
+                <SolidColorBrush Color="#FFF9F9F9" Opacity="0.375"/>
+            </Label.Background>
+        </Label>
+        <Image x:Name="imgLogo" HorizontalAlignment="Left" Height="94" Margin="898,0,0,0" VerticalAlignment="Top" Width="94" Source="Images/Enterprise_NX-01_Logo.png"/>
+
+    </Grid>
+</Window>

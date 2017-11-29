@@ -1,0 +1,51 @@
+﻿<Window x:Name="wndReservationReport" x:Class="Group01.ReservationReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group01"
+        mc:Ignorable="d"
+        Title="Reservation Report" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/background5.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <GroupBox x:Name="gbxFilterInformation" Header="Filter Info" HorizontalAlignment="Left" Height="240" Margin="21,60,0,0" VerticalAlignment="Top" Width="293"/>
+
+        <Button x:Name="btnReturnToMainWindow" Content="Return " HorizontalAlignment="Left" Margin="905,0,0,0" VerticalAlignment="Top" Width="87" Height="34" RenderTransformOrigin="0.717,0.634" Click="btnReturnToMainWindow_Click" FontWeight="Bold" FontSize="16" Foreground="White" TabIndex="7">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <DatePicker x:Name="dtpFromThisDate" HorizontalAlignment="Left" Margin="166,85,0,0" VerticalAlignment="Top" TabIndex="0"/>
+        <DatePicker x:Name="dtpToThisDate" HorizontalAlignment="Left" Margin="166,128,0,0" VerticalAlignment="Top" TabIndex="1"/>
+        <Label x:Name="lblFromThisDate" Content="From This Date:" HorizontalAlignment="Left" Margin="40,85,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="108" Foreground="#FFE6CDCD"/>
+        <Label x:Name="lblToThisDate" Content="To This Date:" HorizontalAlignment="Left" Margin="40,126,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblLastName" Content="Last Name:" HorizontalAlignment="Left" Margin="40,169,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="166,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" TabIndex="2"/>
+        <Label x:Name="lblFirstName" Content="First Name:" HorizontalAlignment="Left" Margin="40,215,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="166,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontWeight="Bold" TabIndex="3"/>
+        <ComboBox x:Name="cbxRoomType" HorizontalAlignment="Left" Margin="166,254,0,0" VerticalAlignment="Top" Width="120" TabIndex="4">
+            <ComboBoxItem Content="One King"/>
+            <ComboBoxItem Content="One King Deluxe"/>
+            <ComboBoxItem Content="Two Queens"/>
+            <ComboBoxItem Content="Two Queen Deluxe"/>
+            <ComboBoxItem Content="One King Suite"/>
+            <ComboBoxItem Content="One King Presidential Suite"/>
+        </ComboBox>
+        <Label x:Name="lblRoomType" Content="Select Room Type:" HorizontalAlignment="Left" Margin="40,254,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFFBFB"/>
+        <Label x:Name="lblSystemTitle" Content="Enterprise Hotel Reservation System" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="342" FontSize="18.667" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" Margin="325,0"/>
+        <TextBox x:Name="txtRoomReport" HorizontalAlignment="Left" Height="331" Margin="422,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="468" FontWeight="Bold" IsTabStop="False" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lblRoomReport" Content="Room Report:" HorizontalAlignment="Left" Margin="422,55,0,0" VerticalAlignment="Top" FontSize="18.667" FontWeight="Bold" Foreground="White" Width="132" Height="40" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnGenerateReport" Content="Generate Report" HorizontalAlignment="Left" Margin="21,332,0,0" VerticalAlignment="Top" Width="120" Height="38" TabIndex="5" Click="btnGenerateReport_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="194,332,0,0" VerticalAlignment="Top" Width="120" Height="38" TabIndex="6" Click="btnClear_Click"/>
+
+    </Grid>
+</Window>
